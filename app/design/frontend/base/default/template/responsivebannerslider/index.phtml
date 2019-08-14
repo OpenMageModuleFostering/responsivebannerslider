@@ -33,13 +33,13 @@ while($row1 = $sql->fetch())
 {
 $title = $row1["title"];
 $description = $row1["description"]; 
-$pageurl = $row1["url"]; 
 $urlx = $row1["image"]; 
+$bannerurl_xx  = $row1["url"]; 
 $media_url =  Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
 $imgurl=$media_url.$urlx;
 ?>
 <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="slide">
-<a href="<?php echo $pageurl; ?>">
+<a href="<?php echo $bannerurl_xx; ?>">
 <img src="<?php echo $imgurl; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
 <div class="caption dark3">
 <h2><?php echo $description; ?></h2>
@@ -123,14 +123,14 @@ while($row1 = $sql->fetch())
 {
 $title = $row1["title"];
 $description = $row1["description"]; 
-$pageurl = $row1["url"]; 
 $urlx = $row1["image"]; 
+$bannerurl_xx  = $row1["url"]; 
 $media_url =  Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
 $imgurl=$media_url.$urlx;
 ?>
 
 <li class="slide">
-<a href="<?php echo $pageurl; ?>">
+<a href="<?php echo $bannerurl_xx; ?>">
 <img src="<?php echo $imgurl; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
 <div class="caption dark3">
 <h2><?php echo $description; ?></h2>
