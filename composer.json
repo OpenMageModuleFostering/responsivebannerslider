@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Responsivebannerslider",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Responsive banner slider extension in magento combine with different type of banner style. ",
+    "authors": [
+    {
+        "name": "Manvendra Sharma",
+        "email": "sharmamanvendra6@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
