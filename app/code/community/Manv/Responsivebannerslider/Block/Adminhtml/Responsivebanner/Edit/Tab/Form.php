@@ -1,5 +1,5 @@
 <?php
-class Manv_Responsivebannerslider_Block_Adminhtml_Responsivebannerslider_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form
+class Manv_Responsivebannerslider_Block_Adminhtml_Responsivebanner_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form
 {
 		protected function _prepareForm()
 		{
@@ -15,7 +15,7 @@ class Manv_Responsivebannerslider_Block_Adminhtml_Responsivebannerslider_Edit_Ta
 						));
 									
 						$fieldset->addField('image', 'image', array(
-						'label' => Mage::helper('responsivebannerslider')->__('Image'),
+						'label' => Mage::helper('responsivebannerslider')->__('Impage'),
 						'name' => 'image',
 						'note' => '(*.jpg, *.png, *.gif)',
 						));
@@ -28,20 +28,20 @@ class Manv_Responsivebannerslider_Block_Adminhtml_Responsivebannerslider_Edit_Ta
 						"label" => Mage::helper("responsivebannerslider")->__("URL"),
 						"name" => "url",
 						));
-									
-						 $fieldset->addField('status', 'select', array(
-						'label'     => Mage::helper('responsivebannerslider')->__('Status'),
-						'values'   => Manv_Responsivebannerslider_Block_Adminhtml_Responsivebannerslider_Grid::getValueArray4(),
-						'name' => 'status',
+					
+						$fieldset->addField("status", "text", array(
+						"label" => Mage::helper("responsivebannerslider")->__("Status"),
+						"name" => "status",
 						));
+					
 
-				if (Mage::getSingleton("adminhtml/session")->getResponsivebannersliderData())
+				if (Mage::getSingleton("adminhtml/session")->getResponsivebannerData())
 				{
-					$form->setValues(Mage::getSingleton("adminhtml/session")->getResponsivebannersliderData());
-					Mage::getSingleton("adminhtml/session")->setResponsivebannersliderData(null);
+					$form->setValues(Mage::getSingleton("adminhtml/session")->getResponsivebannerData());
+					Mage::getSingleton("adminhtml/session")->setResponsivebannerData(null);
 				} 
-				elseif(Mage::registry("responsivebannerslider_data")) {
-				    $form->setValues(Mage::registry("responsivebannerslider_data")->getData());
+				elseif(Mage::registry("responsivebanner_data")) {
+				    $form->setValues(Mage::registry("responsivebanner_data")->getData());
 				}
 				return parent::_prepareForm();
 		}
