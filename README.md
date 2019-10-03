@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Responsive banner slider extension with different type of banner style Fully responsive banner slider. banner.

@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Responsivebannerslider",
+    "name": "openmage-module-fostering\/responsivebannerslider",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Responsive banner slider extension with different type of banner style Fully responsive banner slider. banner.",
     "authors": [
